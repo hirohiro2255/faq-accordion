@@ -13,7 +13,7 @@ body {
   background-size: 100%;
 }
 
-h1, h2, h3, h4, h5, p, ul {
+h1, h2, h3, h4, h5, p, ul,hr {
   margin: 0;
 }
 
@@ -81,4 +81,10 @@ summary::-webkit-details-marker {
   font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
   line-height: 1.5;
   color: var(--pale-purple);
+  margin-top: 24px;
+}
+
+.accordion-border {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
