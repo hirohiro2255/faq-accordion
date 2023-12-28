@@ -124,6 +124,9 @@ summary::-webkit-details-marker {
 
   .card {
     padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 32px 56px 0px hsla(281, 100%, 23%, 0.1);
+
   }
 
 }
