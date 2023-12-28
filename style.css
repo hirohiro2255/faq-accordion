@@ -129,4 +129,8 @@ summary::-webkit-details-marker {
 
   }
 
+  .heading-icon {
+    width: 40px;
+  }
+
 }
