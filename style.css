@@ -28,7 +28,6 @@ summary::-webkit-details-marker {
 .card {
   width: min(87.2%, 600px);
   min-width: 360px;
-  /* width: 87.2%; */
   background-color: var(--pure-white);
   border-radius: 8px;
   padding: 24px;
@@ -61,6 +60,11 @@ summary::-webkit-details-marker {
   line-height: 1.173;
 }
 
+.icon:hover {
+  opacity: 0.8;
+  transition: ease-in 0.2s;
+}
+
 
 
 .question {
@@ -78,6 +82,11 @@ summary::-webkit-details-marker {
   color: var(--dark-purple);
 }
 
+.question-title:hover {
+  color: hsla(281, 83%, 54%, 1);
+  transition: ease-in 0.2s;
+}
+
 .answer {
   font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
   line-height: 1.5;
@@ -88,4 +97,33 @@ summary::-webkit-details-marker {
 .accordion-border {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.accordion[open] {
+  .answer {
+    animation: fadeIn 0.5s ease;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (768px < width <= 1440px) {
+  body {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+  }
+
+  .card {
+    padding: 40px;
+  }
+
 }
