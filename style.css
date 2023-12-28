@@ -26,8 +26,9 @@ summary::-webkit-details-marker {
 }
 
 .card {
-  /* width: min(87.2%, 600px); */
-  width: 87.2%;
+  width: min(87.2%, 600px);
+  min-width: 360px;
+  /* width: 87.2%; */
   background-color: var(--pure-white);
   border-radius: 8px;
   padding: 24px;
